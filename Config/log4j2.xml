@@ -1,0 +1,19 @@
+<Configuration>
+	<Properties>
+		<Property name="basePath">./Logging/</Property>
+	</Properties>
+	<Appenders> 
+		<RollingFile name="File" fileName="${basePath}Test.log" filePattern="${basePath}/Upgrade_%d{MMddyyyy}.log"> 
+			<PatternLayout pattern="%d{MMddyyyy_HH:mm:ss:SSS}%-5level-%c{1} -%msg%n"></PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="3KB"/>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="File"/>
+		</Root>
+	</Loggers>
+</Configuration>

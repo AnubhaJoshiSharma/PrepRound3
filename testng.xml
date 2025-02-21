@@ -1,0 +1,15 @@
+<suite name="Suite" parallel="tests" threadcount="2">
+  <test name="Testchrome">
+	<parameter name="browserName" value = "chrome"></parameter>
+	<classes>
+		<class name="Round3.PrepRound3.Test1"></class>
+	</classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="2" name="Testfirefox">
+	<parameter name="browserName" value = "firefox"></parameter>
+	<classes>
+		<class name="Round3.PrepRound3.Test1"></class>
+	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
