@@ -1,0 +1,4 @@
+02212025_00:19:04:569INFO -Test1 -Browser-->chrome has been launched and application https://www.upgrade.com opened
+02212025_00:19:04:958INFO -Test1 -Test is complete. Quitting browser chrome
+02212025_00:19:09:799INFO -Test1 -Browser-->firefox has been launched and application https://www.upgrade.com opened
+02212025_00:19:10:177INFO -Test1 -Test is complete. Quitting browser firefox

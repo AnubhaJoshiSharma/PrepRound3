@@ -45,10 +45,12 @@ public class Test1 {
 			break;
 		}
 				getDriver().get(configreader.readUrl());
+				log.info("Browser-->"+browserName+" has been launched and application "+configreader.readUrl()+" opened");
 		getDriver().manage().window().maximize();
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		System.out.println("CURRENT URL IS "+getDriver().getCurrentUrl());
 		System.out.println("My name is coming from Maven as "+ myName);
+		log.info("Test is complete. Quitting browser "+browserName);
 		getDriver().quit();
 	}
 }
